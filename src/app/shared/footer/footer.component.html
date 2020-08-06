@@ -1,6 +1,6 @@
 <div class="container fixed-bottom colorBody1">
   <div class="container text-center colorNavbar2">
-    <button type="button" class="btn btn-warning btn-sm cookies8 mt-n1">
+    <button (click)="privacidad()" type="button" class="btn btn-warning btn-sm cookies8 mt-n1">
       <u>Politica de privacidad y cookies</u>
     </button>
     <div class="row">
@@ -27,8 +27,42 @@
     </div>
     <p class="mb-1">
       <small class="text-muted colorName3">
-        Copyrigth &copy;&nbsp; Moya Fernando {{year}}&nbsp; Todos los derechos reservados
+        Copyrigth &copy;&nbsp; Moya Fernando {{ year }}&nbsp; Todos los derechos
+        reservados
       </small>
     </p>
+  </div>
+</div>
+
+<!-- Modal privacidad y cookis-->
+<div
+  class="modal fade"
+  id="privacidad"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content colorModal11">
+      <div class="container backModal12">
+        <div class="modal-body text-center colorTexto10">
+          <h4 class="colorName3 text-uppercase mb-4">
+            <u>Politica de privacidad y cookies</u>
+          </h4>
+          <p class="font-weight-light text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            dicta nisi voluptatum similique iusto, veritatis saepe, ab quidem
+            facere laudantium placeat, accusantium ut explicabo nemo facilis
+            provident quas vero nihil!
+          </p>
+          <div class="container text-center">
+            <button (click)="salir()" class="btn btn-outline-warning colorName3" type="button">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
