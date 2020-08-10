@@ -31,6 +31,8 @@ export class ModalService {
       this.privacidadSeleccionada = true;
     }, 100);
     $('#alerta').modal('hide');
-    // Abrir modal contacto y cerrar modal alerta
+    setTimeout(() => {
+      $('#contacto').modal();
+    }, 500);
   }
 }

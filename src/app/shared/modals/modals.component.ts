@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from 'src/app/services/modal.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-modals',
@@ -25,6 +26,10 @@ export class ModalsComponent implements OnInit {
 
   contacto() {
     this.modalService.contacto();
+  }
+
+  contactoFede(f: NgForm) {
+console.log(f.value);
   }
 
 
