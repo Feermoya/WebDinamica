@@ -17,4 +17,9 @@ export class NavbarComponent implements OnInit {
     $('.navbar-collapse').collapse('hide');
   }
 
+  alerta() {
+    $('#alerta').modal();
+    this.cerrarNavbar();
+  }
+
 }

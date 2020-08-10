@@ -57,9 +57,16 @@
             provident quas vero nihil!
           </p>
           <div class="container text-center">
-            <button (click)="salir()" class="btn btn-outline-warning colorName3" type="button">
-              <i class="fas fa-check"></i>
-            </button>
+            <div class="container text-center">
+              <button *ngIf="modalService.privacidad" (click)="salir()" class="btn btn-outline-warning colorName3"
+                type="button">
+                <i class="fas fa-check"></i>
+              </button>
+              <button *ngIf="!modalService.privacidad" (click)="irAlerta()" class="btn btn-outline-warning colorName3"
+                type="button">
+                <i class="fas fa-check"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
